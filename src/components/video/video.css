@@ -1,0 +1,80 @@
+/* video.css */
+
+/* Estilos para el contenedor del video */
+#video-content {
+    text-align: center;
+    margin: 20px;
+    background-color: #000000; /* Fondo oscuro similar a Netflix */
+    color: white; /* Texto en blanco */
+    padding: 20px; /* Agregar espacio alrededor del contenido */
+  }
+  
+  /* Estilos para el título del video */
+  #video-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* Texto en blanco */
+  }
+  
+  /* Estilos para el reproductor de video */
+  .video-player {
+    width: 100%;
+    max-width: 1920px; /* Establecer el ancho máximo en 1920px */
+    max-height: 1080px; /* Establecer la altura máxima en 1080px */
+    height: auto;
+  }
+  
+  /* Estilos para la descripción del video */
+  .video-description {
+    font-size: 28px;
+    margin-top: 10px;
+    color: white; /* Texto en blanco */
+  }
+  
+  /* Estilos para el mensaje de "No encontrado" */
+  #not-found-message {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    background-color: #000000; /* Fondo oscuro similar a Netflix */
+    color: white; /* Texto en blanco */
+  }
+  
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .back-link svg {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+
+  /* Estilos para el spinner de carga */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente en la pantalla completa */
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    /* Modifica los estilos para pantallas más pequeñas */
+    #video-content {
+      padding: 10px; /* Menos espacio en pantallas pequeñas */
+    }
+    #video-title {
+      font-size: 20px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+    .video-description {
+      font-size: 14px; /* Reducir el tamaño de la descripción en pantallas pequeñas */
+    }
+  }
+  
