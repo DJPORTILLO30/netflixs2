@@ -1,70 +1,116 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](https://drive.google.com/uc?export=download&id=12zBhO-hc_vPfFuycQH5RJDVilOG_A3gM)
 
-## Available Scripts
 
-In the project directory, you can run:
+# NetflixS2
 
-### `npm start`
+NetflixS2 es una aplicación que representa un ejemplo básico de una plataforma de streaming bajo demanda, similar a servicios populares como Netflix. Está desarrollada utilizando la biblioteca de JavaScript llamada React, que se utiliza comúnmente para crear aplicaciones web interactivas y de una sola página (SPA, por sus siglas en inglés).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Protocolo de Streaming:** NetflixS2 utiliza el protocolo HLS (HTTP Live Streaming) para garantizar una experiencia de streaming suave y adaptable en una variedad de dispositivos y condiciones de red. HLS es ampliamente compatible y permite la transmisión de contenido multimedia en tiempo real a través de la web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![HomeMenu](https://drive.google.com/uc?export=download&id=10YmqWkYF6wJq1GXUsO_gPSwU5Y9Qx9na)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![ContetView](https://drive.google.com/uc?export=download&id=1a2JXSiVJU7s2vwVZBQS6zM91KRQdZq_G)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Network](https://drive.google.com/uc?export=download&id=1zxaadJCUvg_VNCKKONYf5f7ZIho_sPw4)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Live Demo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Puedes probar la aplicacion aqui: 
+https://netflixs2.web.app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Client:** ReactJS
 
-## Learn More
+**Server:** Firebase
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Servicios necesarios.
 
-### Code Splitting
+Para utilizar este proyecto necesistas contar con una CDN previamente configurada para poder servir el contenido multimedia mediante el protocolo HLS algunas que te recomendamos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ - [AWS CloudFront](https://docs.aws.amazon.com/es_es/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
+ - [Bunny.net](https://bunny.net/)
 
-### Analyzing the Bundle Size
+ Adicionalmente para este proyecto se utilizan los servicios de Firebase por lo tanto debes crear y configurar un proyecto, ya que   es nuestro motor de base de datos y servidor de despliegue.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ - [Bunny.net](https://firebase.google.com/?hl=es-419)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Instalacion
 
-### Advanced Configuration
+Instala el proyecto con npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+  cd netflixs2
+  npm install
+  npm start
+```
+    
+## Environment Variables
 
-### Deployment
+Para ejecutar este proyecto, necesitas configurar tu  archivo .env coon las siguientes Variables de entorno 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+  `REACT_APP_apiKey` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  `REACT_APP_authDomain`
+
+  `REACT_APP_projectId` 
+
+  `REACT_APP_storageBucket` 
+
+  `REACT_APP_messagingSenderId`
+
+  `REACT_APP_appId`
+
+  `REACT_APP_measurementId` 
+
+Puedes encontrar un archivo `.env.example` para ayudarte.
+
+
+
+## Deployment
+
+Para desplegar este proyecto, debes tener firebase hosting previamente configurado. Luego de ello ejecutar los siguiente comandos.
+
+```bash
+  npm install -g firebase-tools
+  firebase login
+  firebase init
+  firebase deploy
+```
+
+
+## Relacionado
+
+Algunos proyectos y librerias utiles para el desarrollo de este proyecto.
+
+[HLS.js](https://github.com/video-dev/hls.js)
+
+
+## Documentacion
+
+[Documentacion](https://linktodocumentation)
+
+
+## Authors
+
+- [@DJPORTILLO30](https://github.com/DJPORTILLO30)
+- [@SFMZ21](https://github.com/SFMZ21)
+- [@lighnio](https://github.com/lighnio)
+- [@HJOC15](https://github.com/HJOC15)
+- [@Davinderpro01](https://github.com/Davinderpro01)
+
+
+## License
+
+[MIT](https://github.com/DJPORTILLO30/netflixs2/blob/master/LICENSE)
+
