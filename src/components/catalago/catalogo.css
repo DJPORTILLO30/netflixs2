@@ -1,0 +1,49 @@
+/* Catalogo.css */
+.catalogo {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .catalogo h2 {
+    margin-bottom: 20px;
+    text-align: left; 
+  }
+  
+  .catalogo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+  }
+  
+  .catalogo-card {
+    background-color: #d0d0d0; /* Fondo blanco similar a Material Design */
+    border: 1px solid #d0d0d0; /* Borde más delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    margin: 10px;
+    width: 220px; /* Ancho ligeramente mayor */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea elementos verticalmente */
+  }
+  
+  .catalogo-card img {
+    max-width: 100%;
+    flex: 1; /* La imagen ocupa más espacio */
+  }
+  
+  .catalogo-card h3 {
+    color: #000;
+    font-size: 18px; /* Tamaño de fuente mayor */
+    margin: 10px 0; /* Espaciado superior e inferior del texto */
+  }
+  
+  .catalogo-card p {
+    color: #555; /* Color de texto gris */
+    font-size: 14px; /* Tamaño de fuente menor */
+    margin-bottom: 10px; /* Espaciado inferior del texto */
+  }
+  
