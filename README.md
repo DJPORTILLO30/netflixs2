@@ -23,7 +23,7 @@ NetflixS2 es una aplicación que representa un ejemplo básico de una plataforma
 ## Live Demo
 
 Puedes probar la aplicacion aqui: 
-https://netflixs2.web.app
+https://proyecto-telecomunicacio-7e0e4.web.app
 
 ## Tech Stack
 
